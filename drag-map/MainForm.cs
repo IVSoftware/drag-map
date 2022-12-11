@@ -20,9 +20,12 @@ namespace drag_map
         }
 
         Point
+            // Where's the cursor in relation to screen when mouse button is pressed?
             _mouseDownScreen = new Point(),
-            _mouseDelta = new Point(),
-            _controlDownPoint = new Point();
+            // Where's the 'map' control when mouse button is pressed?
+            _controlDownPoint = new Point(),
+            // How much has the mouse moved from it's original mouse-down location?
+            _mouseDelta = new Point();
 
         private void onMapMouseDown(object sender, MouseEventArgs e)
         {
