@@ -15,7 +15,6 @@ namespace drag_map
         public MainForm()
         {
             InitializeComponent();
-            countryMapImage.MouseUp += onMapMouseUp;
             countryMapImage.MouseMove += onMapMouseMove;
             countryMapImage.MouseDown += onMapMouseDown;
         }
@@ -24,6 +23,7 @@ namespace drag_map
             _mouseDownScreen = new Point(),
             _mouseDelta = new Point(),
             _controlDownPoint = new Point();
+
         private void onMapMouseDown(object sender, MouseEventArgs e)
         {
             if (sender is Control control)
@@ -50,10 +50,6 @@ namespace drag_map
                     }
                 }
             }
-        }
-
-        private void onMapMouseUp(object sender, MouseEventArgs e)
-        {
         }
     }
 }

@@ -49,7 +49,6 @@ namespace drag_map
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.countryMapImage);
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.ResumeLayout(false);
 
